@@ -24,19 +24,18 @@
 }
 }
 
-.menu-button .icon-menu {
+.menu-button .icon-cross {
   display: none;
 }
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .icon-cross{
   display: block;
 }
-.menu-button.is-open .icon-cross {
+.menu-button.is-open .icon-menu {
   display: none;
 }
 
 .menu-container {
   text-align: center;
-  z-index: 1;
   background-color: #ffffff;
   opacity: 0;
   pointer-events: none;
@@ -63,7 +62,7 @@
 }
 }
 @media screen and (min-width:768px) {
-  .container.header button {
+  .menu-button {
     display: none;
   }
 }
