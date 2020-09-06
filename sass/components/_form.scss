@@ -60,7 +60,7 @@
 }
   
   .input-modal {
-    width: 370px;
+    width: 100%;
     height: 40px;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -68,7 +68,7 @@
     border-radius: 4px;
 
     &.area {
-      width: 370px;
+      width: 100%;
       height: 120px;
       padding: 12px 16px;
       resize: none;
