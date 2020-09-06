@@ -1,9 +1,21 @@
 .contacts-list {
-
-@media screen and (min-width:768px) {
+@media screen and (max-width:1199px) {
   align-items: center;
+  & li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  display: flex;
+  align-items: center;
+  margin-left: 305px;
+  & li:last-child {
+    margin-left: 30px;
 }
 }
+}
+
 
   .contacts-item:hover,
   .contacts-item:focus {
@@ -22,7 +34,7 @@
     height: 15px;
   }
   .icon {
-
+      margin-right: 10px;
       fill: currentColor;
   }
   
@@ -31,8 +43,16 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $p-text-color;
-    margin-left: 24px;
+
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
+
     margin-bottom: 16px;
+    margin-left: 24px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
   }
+  

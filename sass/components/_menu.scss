@@ -1,9 +1,9 @@
 .menu-container {
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 1.166;
-letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
 }
 
 .site-nav {
@@ -31,15 +31,25 @@ margin-bottom: 60px;
   .menu-container {
     display: flex;
     align-items: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
   }
 
   .site-nav {
     display: flex;
-
+    margin-right: 84px;
+ 
     & li:not(:last-child) {
       margin-right: 50px;
     }
+    @media screen and (min-width:1200px) {
+      margin-right: 0px;
   }
+}
 }
 
 

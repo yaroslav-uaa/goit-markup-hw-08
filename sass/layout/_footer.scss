@@ -4,7 +4,6 @@ footer {
 }
 
 div.footer {
-  padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
 }
@@ -17,9 +16,97 @@ div.footer {
   color: currentColor;
 }
 }
+.social-container {
+  margin-bottom: 60px;
+}
+
+// ДЛЯ ПЛАНШЕТА
+div.footer {
+
+  @media screen and (min-width:768px) {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  
+
+
+.address-footer {
+  width: calc(50% - 15px);
+ & .contacts-item:last-child {
+   margin-top: 8px;
+ }
+}
 
 .social-container {
-margin-bottom: 60px;
+  width: calc(50% - 15px);
+}
+
+.share-it {
+  width: 100%;
+  display: block;
+}
+}
+
+@media screen and (min-width:1200px) {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  text-align: left;
+  padding-bottom: 0px;
+
+  
+  .address-footer {
+    width: calc(25% - 30px);
+     margin-right: 30px;
+
+        & .contacts-item:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    }
+.address-list>p {
+    margin-bottom: 10px;
+}
+      
+.social-container {
+    width: calc(25% - 30px);
+
+        & .social-list {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 20px;
+            justify-content: inherit;
+        }
+        & .icons:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+.footer .social-icons {
+    width: 20px;
+    height: 20px;
+    fill: $white-color;
+}
+
+.share-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 580px;
+    min-height: 86px;
+}
+.label-form {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    color: currentColor;
+  }
+  
+.box-input {
+    display: flex;
+    color: currentColor;
+  }
+}
 }
 
 .footer .social-icons {
@@ -41,8 +128,13 @@ margin-bottom: 60px;
     outline: none;
 
     margin-top: 20px;
-
+// Вставочка для форми для ТЕЛЕФОНА
     @media screen and (max-width: 479px) {
       width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 357px;
+      margin-top: 0px;
     }
 }
