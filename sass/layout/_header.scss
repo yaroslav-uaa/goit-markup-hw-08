@@ -1,12 +1,12 @@
+header {
+  position: relative;
+  border-bottom: 1px solid #ECECEC;
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-    position: relative;
   }
 
 @media screen and (max-width: 767px) {
@@ -40,20 +40,18 @@
   opacity: 0;
   pointer-events: none;
 
-  transform: translateY(100%);
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 
 
   position: absolute;
-  bottom: 0;
+  top: 100%;
   left: 0;
   width: 100%;
 
   &.is-open {
     opacity: 1;
     display: block;
-    transform: translateY(100%);
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
     visibility: visible;
