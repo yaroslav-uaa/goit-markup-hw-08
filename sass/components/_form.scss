@@ -1,0 +1,142 @@
+.modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    background-color: transparent;
+  
+  &:hover,
+  &:focus {
+    fill: $accent-text-color;
+  }
+}
+  
+  .svg-btn {
+    width: 18px;
+    height: 18px;
+  }
+  .form-modal .h1-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  }
+  
+  .form-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    
+   & button {
+      width: 200px;
+      align-self: center;
+  }
+}
+  
+  .modal-label {
+    position: relative;
+    margin-top: 10px;
+    color: $p-text-color;
+  
+  & .name-label {
+    display: flex;
+    justify-items: flex-start;
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+  
+  .input-modal {
+    width: 370px;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &.area {
+      width: 370px;
+      height: 120px;
+      padding: 12px 16px;
+      resize: none;
+      }
+   }
+   .input-modal:focus + .icon-input {
+    color: $accent-text-color;
+  }
+  .input-modal:focus {
+    border-color: $accent-text-color;
+    outline: none;
+  }
+  
+  .icon-input {
+    position: absolute;
+    display: flex;
+    bottom: 11px;
+    left: 11px;
+  }
+  .icon-input, .iconmodal {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+  .form-modal .checkbox-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.714;
+    color: $p-text-color;
+   }
+   .label-checkbox {
+    margin-top: 20px;
+    margin-bottom: 30px;
+   }
+
+  .checkbox-text-terms {
+    display: inline;
+    color: $accent-text-color;
+    text-decoration: underline;
+  }
+  
+  .checkbox-text::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: text-top;
+    border: 2px solid $primary-text-color;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+  &:checked ~ .checkbox-text::before {
+    background-color: $accent-text-color;
+    background-image: url(../img/SVG/check.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-color: $accent-text-color;
+    background-origin: border-box;
+  } 
+}

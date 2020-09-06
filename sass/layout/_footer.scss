@@ -1,0 +1,48 @@
+footer {
+  background-color: #2F303A;
+  color: $white-color;
+}
+
+div.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.address-list{
+  margin-bottom: 60px;
+
+& p {
+  font-style: normal;
+  margin-bottom: 10px;
+  color: currentColor;
+}
+}
+
+.social-container {
+margin-bottom: 60px;
+}
+
+.footer .social-icons {
+    width: 20px;
+    height: 20px;
+    fill: $white-color;
+}
+
+.input-form {
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    padding-left: 16px;
+    color: currentColor;
+    outline: none;
+
+    margin-top: 20px;
+
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+}

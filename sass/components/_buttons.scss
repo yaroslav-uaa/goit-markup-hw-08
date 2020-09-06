@@ -1,0 +1,93 @@
+.button {
+  width: 200px;
+  height: 50px;
+  background: $bg-but-col;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: inherit;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  }
+    
+  .button:hover,
+  .button:focus {
+    color: $primary-text-color;
+    background-color: $accent-text-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+    
+  .button:active {
+    color: $primary-text-color;
+    background-color: $icon-color;
+  }
+  
+
+
+
+  .button.footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 20px auto 0px auto;
+      text-align: center;
+      padding: 10px 29px;
+
+      &.social-icons {
+        fill: currentColor;
+      }
+
+      & p {
+        color: inherit;
+        font-weight: bold;
+      }
+    }
+
+// Кнопки портфоліо
+.button-list {
+  color: $primary-text-color;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-content: space-around;
+
+
+  
+  & .btn {
+    padding-top: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+
+    color: $primary-text-color;
+    background-color: #F5F4FA;
+    border: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    outline: none;
+  }
+  & .item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 15px; 
+  }
+}
+.btn:hover,
+.btn:focus {
+  color: $white-color;
+  background-color: $accent-text-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.btn:active {
+  color: $p-text-color;
+}

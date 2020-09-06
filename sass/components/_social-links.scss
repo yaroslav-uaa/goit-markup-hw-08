@@ -1,0 +1,38 @@
+.social-list {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    justify-content: center;
+    }
+
+.icons:not(:last-child) {
+    margin-right: 10px;
+
+}
+.icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $icon-color;
+    text-decoration: none;
+    font-style: normal;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    
+        &:hover, &:focus {
+            color: $white-color;
+            background-color: rgba(33, 150, 243, 0.9);
+        }
+        &:active {
+            color: $white-color;
+        } 
+    }
+    .teammates .social-icons {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
