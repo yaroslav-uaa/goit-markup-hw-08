@@ -487,7 +487,6 @@ p {
 
 header {
   position: relative;
-  border-bottom: 1px solid #ECECEC;
 }
 
 .header {
@@ -528,6 +527,7 @@ header {
     background-color: #ffffff;
     opacity: 0;
     pointer-events: none;
+    border-top: 1px solid #ECECEC;
     -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition-duration: 250ms;
@@ -653,6 +653,14 @@ header {
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contacts-item:hover,

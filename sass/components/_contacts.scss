@@ -1,6 +1,10 @@
 .contacts-list {
 
-  }
+@media screen and (min-width:768px) {
+  align-items: center;
+}
+}
+
   .contacts-item:hover,
   .contacts-item:focus {
     color: $accent-text-color;
@@ -22,9 +26,6 @@
       fill: currentColor;
   }
   
-  address {
-
-  }
   .contacts-item {
     font-weight: 500;
     line-height: 1.14;
