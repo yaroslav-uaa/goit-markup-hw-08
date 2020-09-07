@@ -26,9 +26,15 @@
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+  color: $primary-text-color;
+
+@media screen and (min-width:1200) {
+  line-height: 1.15;
+}
+
   }
   
   .form-modal {
@@ -58,7 +64,11 @@
     line-height: 14px;
   }
 }
-  
+ .iconmodal {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
   .input-modal {
     width: 100%;
     height: 40px;
@@ -66,16 +76,27 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    color: $primary-text-color;
 
     &.area {
       width: 100%;
       height: 120px;
       padding: 12px 16px;
       resize: none;
+
+      &::placeholder {
+        font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 1.166;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      }
       }
    }
    .input-modal:focus + .icon-input {
     color: $accent-text-color;
+    fill:$accent-text-color;
   }
   .input-modal:focus {
     border-color: $accent-text-color;
@@ -87,12 +108,9 @@
     display: flex;
     bottom: 11px;
     left: 11px;
+    color: $primary-text-color;
   }
-  .icon-input, .iconmodal {
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
-  }
+
   .form-modal .checkbox-text {
     font-style: normal;
     font-weight: normal;

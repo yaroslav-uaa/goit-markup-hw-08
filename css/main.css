@@ -538,6 +538,7 @@ header {
     width: 100%;
   }
   .menu-container.is-open {
+    z-index: 5;
     opacity: 1;
     display: block;
     -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1080,7 +1081,7 @@ h1 {
 }
 
 .button {
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   background: #188CE8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1118,9 +1119,13 @@ h1 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 20px auto 0px auto;
   text-align: center;
+  margin: 20px auto 0px auto;
   padding: 10px 29px;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .button.footer.social-icons {
@@ -1130,6 +1135,7 @@ h1 {
 .button.footer p {
   color: inherit;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1139,7 +1145,6 @@ h1 {
 }
 
 .button-list {
-  color: #212121;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1151,6 +1156,7 @@ h1 {
           justify-content: space-between;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
+  color: #212121;
 }
 
 .button-list .btn {
@@ -1173,6 +1179,25 @@ h1 {
 .button-list .item:not(:last-child) {
   margin-right: 8px;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-list {
+    margin-bottom: 30px;
+  }
+  .button-list .item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .btn:hover,
@@ -1200,7 +1225,7 @@ h1 {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   z-index: 10;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1228,6 +1253,20 @@ h1 {
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-btn {
@@ -1264,9 +1303,16 @@ h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200) {
+  .form-modal .h1-name {
+    line-height: 1.15;
+  }
 }
 
 .form-modal {
@@ -1307,6 +1353,12 @@ h1 {
   line-height: 14px;
 }
 
+.iconmodal {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
 .input-modal {
   width: 100%;
   height: 40px;
@@ -1315,6 +1367,7 @@ h1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
+  color: #212121;
 }
 
 .input-modal.area {
@@ -1324,8 +1377,45 @@ h1 {
   resize: none;
 }
 
+.input-modal.area::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.input-modal.area:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.input-modal.area::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.input-modal.area::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .input-modal:focus + .icon-input {
   color: #2196F3;
+  fill: #2196F3;
 }
 
 .input-modal:focus {
@@ -1340,12 +1430,7 @@ h1 {
   display: flex;
   bottom: 11px;
   left: 11px;
-}
-
-.icon-input, .iconmodal {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
+  color: #212121;
 }
 
 .form-modal .checkbox-text {

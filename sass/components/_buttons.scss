@@ -1,5 +1,5 @@
 .button {
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   background: $bg-but-col;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -35,9 +35,13 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      margin: 20px auto 0px auto;
       text-align: center;
+
+      margin: 20px auto 0px auto;
       padding: 10px 29px;
+
+      transition: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
 
       &.social-icons {
         fill: currentColor;
@@ -46,6 +50,7 @@
       & p {
         color: inherit;
         font-weight: bold;
+        margin-right: 10px;
       }
       @media screen and (min-width: 1200px) {
         margin: 0px 0px 0px 12px; 
@@ -54,14 +59,14 @@
 
 // Кнопки портфоліо
 .button-list {
-  color: $primary-text-color;
+
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
   justify-content: space-between;
   align-content: space-around;
 
-
+  color: $primary-text-color;
   
   & .btn {
     padding-top: 6px;
@@ -81,6 +86,19 @@
   & .item:not(:last-child) {
     margin-right: 8px;
     margin-bottom: 15px; 
+  }
+
+  @media screen and (min-width:768px){
+    margin-bottom: 30px;
+    & .item:not(:last-child) {
+      margin-right: 8px;
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width:1200px){
+    margin-bottom: 50px;
+    justify-content: center;
   }
 }
 .btn:hover,

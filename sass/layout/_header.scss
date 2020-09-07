@@ -50,6 +50,7 @@ header {
   width: 100%;
 
   &.is-open {
+    z-index: 5;
     opacity: 1;
     display: block;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
