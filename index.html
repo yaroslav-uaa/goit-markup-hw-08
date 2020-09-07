@@ -156,20 +156,36 @@
                 <ul class="products-list">
                     <li class="products">
                         <div class="products-position">
-                            <img src="./img/laptopap.jpg" width="370" alt="">
+                            <picture>
+                                <source srcset="./img/action1/action1.webp 1x, 
+                                ./img/action1/action1-2x.webp 2x"  type="image/webp">
+                                  <img srcset="./img/action1/action1.jpg 1x, 
+                                  ./img/action1/action1-2x.jpg 2x" 
+                                  src="./img/action1/action1.jpg" 
+                                  alt="Десктопні додатки">
+                            </picture>
                             <h3 class="name">Десктопні додатки</h3>    
                         </div>
                     </li>
                     <li class="products">
                         <div class="products-position">
-                            <img src="./img/mobileap.jpg" width="370" alt="">
-                            <h3 class="name">Мобільні додатки</h3>    
+                          <picture>
+                            <source srcset="./img/action2/action2.webp 1x,
+                            ./img/action2/action2-2x.webp 2x"  type="image/webp">
+                            <img srcset="./img/action2/action2.jpg 1x,./img/action2/action2-2x.jpg 2x" src="./img/action2/action2.jpg"
+                             alt="Мобільні додатки">
+                          </picture>                            
+                          <h3 class="name">Мобільні додатки</h3>    
                         </div>
                     </li>
                     <li class="products">
                         <div class="products-position">
-                            <img src="./img/design.jpg" width="370" alt="">
-                            <h3 class="name">Дизайнерські рішення</h3>    
+                          <picture>
+                            <source srcset="./img/action3/action3.webp 1x, ./img/action3/action3-2x.webp 2x"  type="image/webp">
+                            <img srcset="./img/action3/action3.jpg 1x, ./img/action3/action3-2x.jpg 2x" src="./img/action3/action3.jpg" 
+                              alt="Дизайнерські рішення">
+                          </picture>                            
+                          <h3 class="name">Дизайнерські рішення</h3>    
                         </div>
                     </li>
                 </ul>   
@@ -182,8 +198,18 @@
                 <h2 class="main-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="teammates">
-                        <img src="./img/team/idem.jpg" width="" alt="">
-                        <p>Игорь Демьяненко</p>
+                        <picture class="img">
+                            <source srcset="./img/teamcard1/team1-1200.webp 1x, ./img/teamcard1/team1-1200-2x.webp 2x"
+                              media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./img/teamcard1/team1-768.webp 1x, ./img/teamcard1/team1-768-2x.webp 2x"
+                              media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./img/teamcard1/team1-480.webp 1x, ./img/teamcard1/team1-480-2x.webp 2x" type="image/webp">
+                            <source srcset="./img/teamcard1/team1-1200.jpg 1x, ./img/teamcard1/team1-1200-2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/teamcard1/team1-768.jpg 1x, ./img/teamcard1/team1-768-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./img/teamcard1/team1-480.jpg 1x, ./img/teamcard1/team1-480">
+                            <img src="./img/teamcard1/teamcard1-1200.jpg" alt="Игорь Демьяненко" >
+                          </picture>                        
+                          <p>Игорь Демьяненко</p>
                         <p class="text">Product Designer</p>
                         <ul class="social-list">
                             <li class="icons">
@@ -209,8 +235,18 @@
                         </ul>
                     </li>
                     <li class="teammates">
-                        <img src="./img/team/оr.jpg" width="" alt="">
-                        <p>Ольга Репина</p>
+                        <picture class="img">
+                            <source srcset="./img/teamcard2/team2-1200.webp 1x, ./img/teamcard2/team2-1200-2x.webp 2x"
+                              media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./img/teamcard2/team2-768.webp 1x, ./img/teamcard2/team2-768-2x.webp 2x"
+                              media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./img/teamcard2/team2-480.webp 1x, ./img/teamcard2/team2-480-2x.webp 2x" type="image/webp">
+                            <source srcset="./img/teamcard2/team2-1200.jpg 1x, ./img/teamcard2/team2-1200-2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/teamcard2/team2-768.jpg 1x, ./img/teamcard2/team2-768-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./img/teamcard2/team2-480.jpg 1x, ./img/teamcard2/team2-480">
+                            <img src="./img/teamcard2/team2-1200.jpg" alt="Ольга Репина" >
+                          </picture>                        
+                          <p>Ольга Репина</p>
                         <p class="text">Frontend Developer</p>
                         <ul class="social-list">
                             <li class="icons">
@@ -236,8 +272,18 @@
                         </ul>
                     </li>
                     <li class="teammates">
-                        <img src="./img/team/nt.jpg" width="" alt="">
-                        <p>Николай Тарасов</p>
+                        <picture class="img">
+                            <source srcset="./img/teamcard3/teamcard3-1200.webp 1x, ./img/teamcard3/team3-1200-2x.webp 2x"
+                              media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./img/teamcard3/teamcard3-768.webp 1x, ./img/teamcard3/team3-768-2x.webp 2x"
+                              media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./img/teamcard3/team3-480.webp 1x, ./img/teamcard3/team3-480-2x.webp 2x" type="image/webp">
+                            <source srcset="./img/teamcard3/team3-1200.jpg 1x, ./img/teamcard3/team3-1200-2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/teamcard3/team3-768.jpg 1x, ./img/teamcard3/team3-768-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./img/teamcard3/team3-480.jpg 1x, ./img/teamcard3/team3-480">
+                            <img src="./img/teamcard3/team3-1200.jpg" alt="Николай Тарасов" >
+                          </picture>                       
+                          <p>Николай Тарасов</p>
                         <p class="text">Marketing</p>
                         <ul class="social-list">
                             <li class="icons">
@@ -263,7 +309,17 @@
                         </ul>
                     </li>
                     <li class="teammates">
-                        <img src="./img/team/me.jpg" width="" alt="">
+                        <picture class="img">
+                            <source srcset="./img/teamcard4/team4-1200.webp 1x, ./img/teamcard4/team4-1200-2x.webp 2x"
+                              media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./img/teamcard4/team4-768.webp 1x, ./img/teamcard4/team4-768-2x.webp 2x"
+                              media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./img/teamcard4/team4-480.webp 1x, ./img/teamcard4/team4-480-2x.webp 2x" type="image/webp">
+                            <source srcset="./img/teamcard4/team4-1200.jpg 1x, ./img/teamcard4/team4-1200-2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/teamcard4/team4-768.jpg 1x, ./img/teamcard4/team4-768-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./img/teamcard4/team4-480.jpg 1x, ./img/teamcard4/team4-480">
+                            <img src="./img/teamcard4/team4-1200.jpg" alt="Михаил Ермаков" >
+                          </picture>
                         <p>Михаил Ермаков</p>
                         <p class="text">UI Designer</p>
                         <ul class="social-list">
