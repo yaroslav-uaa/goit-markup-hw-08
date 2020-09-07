@@ -6,7 +6,7 @@
   border-radius: 4px;
   border: inherit;
   outline: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
@@ -34,10 +34,8 @@
   .button.footer {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
       text-align: center;
-
-      margin: 20px auto 0px auto;
       padding: 10px 29px;
 
       transition: cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,13 +45,7 @@
         fill: currentColor;
       }
 
-      & p {
-        color: inherit;
-        font-weight: bold;
-        margin-right: 10px;
-      }
       @media screen and (min-width: 1200px) {
-        margin: 0px 0px 0px 12px; 
     }
   }
 
@@ -63,17 +55,20 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  justify-content: space-between;
   align-content: space-around;
+
+  @media screen and (min-width:768px){
+    justify-content: center;
+  }
 
   color: $primary-text-color;
   
   & .btn {
-    padding-top: 6px;
-    padding-left: 22px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-
+    padding: 6px 22px;
+  
+    font-size:16px;
+    font-weight: 500;
+    line-height: 1.62;  
     color: $primary-text-color;
     background-color: #F5F4FA;
     border: 4px;

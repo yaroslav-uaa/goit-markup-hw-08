@@ -56,6 +56,8 @@ margin-bottom: 60px;
 .link {
     position: relative;
     display: inline;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 
     &:hover,
     &:focus {
@@ -77,5 +79,18 @@ margin-bottom: 60px;
         height: 4px;
         background-color: $accent-text-color;
         border-radius: 2px;
+      }
+
+      @media screen and (min-width:768px) {
+        padding: 32px 0;
+  
+        &.current::after {
+          bottom: 0;
+        }
+      }
+      @media screen and (min-width:1200px) {
+        &.current::after {
+          bottom: 0;
+        }
       }
     }
