@@ -16,7 +16,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 73px 24px;
+    
+    // для зовсім маленьких екранів
+    padding: 5% 5%;
     margin: 0;
 
     background: rgba(33, 150, 243, 0.9);
@@ -29,6 +31,10 @@
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+
+    @media screen and (min-width: 480px) {
+      padding: 77px 24px;
+  }
 
     @media screen and (min-width: 768px) {
       padding: 49px 24px;
