@@ -1,5 +1,4 @@
 .logo {
-  padding: 16px 0px;
 
   font-family: 'Raleway', sans-serif;
   color: $primary-text-color;
@@ -7,14 +6,22 @@
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
-
-  @media screen and (min-width:768px){
+}
+@media screen and (max-width:767px) {
+  .header .logo{
+    padding: 16px 0px;
+  }
+}
+  @media screen and (min-width:768px) {
+    .header .logo {
     padding: 26px 0px;
     
     font-size: 24px;
     line-height: 1.16;
+    }
   }
   @media screen and (min-width:1200px){
+    .header .logo {
     padding: 24px 0px;
     
     font-size: 26px;
@@ -28,8 +35,5 @@
 
 .address-footer .logo {
 padding-bottom: 20px;
-
-  color: $white-color;
-  font-weight: 700;
-  text-transform: none;
+color: $white-color;
 }

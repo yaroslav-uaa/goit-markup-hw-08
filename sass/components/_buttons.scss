@@ -1,6 +1,7 @@
 .button {
   width: 200px;
   height: 50px;
+
   background: $bg-but-col;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -12,6 +13,9 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: $white-color;
+
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   }
     
   .button:hover,
@@ -38,6 +42,11 @@
       text-align: center;
       padding: 10px 29px;
 
+      margin-right: auto;
+      margin-top: 20px;
+      margin-left: auto;
+
+
       transition: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 250ms;
 
@@ -46,20 +55,17 @@
       }
 
       @media screen and (min-width: 1200px) {
+        margin-left: 10px;
+        margin-top: 0;
     }
   }
 
 // Кнопки портфоліо
 .button-list {
-
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
   align-content: space-around;
-
-  @media screen and (min-width:768px){
-    justify-content: center;
-  }
 
   color: $primary-text-color;
   
@@ -85,6 +91,9 @@
 
   @media screen and (min-width:768px){
     margin-bottom: 30px;
+
+    justify-content: center;
+
     & .item:not(:last-child) {
       margin-right: 8px;
       margin-bottom: 0px;
@@ -92,6 +101,7 @@
   }
 
   @media screen and (min-width:1200px){
+    margin-top: 34px;
     margin-bottom: 50px;
     justify-content: center;
   }
