@@ -1338,7 +1338,7 @@ h1 {
           transition-duration: 250ms;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 818px) and (orientation: landscape) {
   .modal {
     -webkit-transform: translate(-50%, -25%);
             transform: translate(-50%, -25%);
