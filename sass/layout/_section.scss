@@ -2,6 +2,12 @@ section {
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media screen and(min-width:1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+
+
     &.hero {
         padding: 0px;
     }
@@ -46,7 +52,7 @@ section {
       max-width: 354px;
       margin-right: 30px;
       margin-left: 0px;
-
+      
       & .benefits {
         text-align: left;
         }
@@ -54,11 +60,14 @@ section {
       &:nth-child(2n) {
       margin-right: 0px;
       }
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
     }
 
     @media screen and (min-width:1200px) {
     width: calc((100%-90px) / 4);
-
+    margin-bottom: 0;
      &:not(:last-child) {
       margin-right: 30px;
       }
@@ -84,6 +93,10 @@ section {
   }
 }
 @media screen and (min-width:1200px) {
+section.section-products {
+  padding-top: 0;
+}
+
   .products-list {
     display: flex;
     
@@ -117,7 +130,6 @@ section {
 
 // Контейнер НАША КОМАНДА
 .section-team {
-    padding: 60px 0px;
     background: #F5F4FA;
 
     }
