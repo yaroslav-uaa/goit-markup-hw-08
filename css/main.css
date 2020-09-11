@@ -1168,6 +1168,7 @@ section.hero {
 }
 
 h1 {
+  display: block;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.363;
@@ -1175,10 +1176,23 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    width: 360px;
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 
 .button {
